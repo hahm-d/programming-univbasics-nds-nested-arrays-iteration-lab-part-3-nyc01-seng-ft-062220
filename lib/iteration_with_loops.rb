@@ -6,8 +6,9 @@ def join_nested_strings(src)
   index = 0 
   while index < one.count do 
     if one[index].is_a? String
-      new_value += one[index]
+      new_value += one[index] + " "
     end
-  end 
+    index += 1
+  end
   new_value
 end
